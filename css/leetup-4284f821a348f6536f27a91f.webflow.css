@@ -2570,14 +2570,16 @@ p {
 
 .navbar-icon {
   float: none;
-  -webkit-transition: color 300ms ease, all 300ms ease;
-  transition: color 300ms ease, all 300ms ease;
+  opacity: 0.7;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
   color: #ababab;
   font-size: 40px;
 }
 
 .navbar-icon:hover {
-  color: #ff6382;
+  opacity: 1;
+  color: #ababab;
 }
 
 .menu-button {
@@ -2776,7 +2778,7 @@ p {
 }
 
 .newsletter-header.bottom {
-  margin-top: -30px;
+  margin-top: 0px;
   padding-top: 0px;
   padding-bottom: 25px;
   font-size: 32px;
@@ -2792,7 +2794,7 @@ p {
 }
 
 .newsletter-form {
-  display: block;
+  display: none;
   width: 70%;
   margin-right: auto;
   margin-left: auto;
@@ -3491,7 +3493,8 @@ p {
 }
 
 .tabsfull {
-  height: 1050px;
+  height: 900px;
+  margin-bottom: 40px;
   background-color: transparent;
 }
 
@@ -3517,7 +3520,7 @@ p {
 }
 
 .slider-dots {
-  margin-bottom: 158px;
+  margin-bottom: 8px;
 }
 
 .timeline-years._1 {
@@ -4415,6 +4418,7 @@ p {
 }
 
 .keyboard {
+  display: block;
   width: 800px;
   margin-top: 130px;
   margin-right: auto;
@@ -4800,31 +4804,32 @@ p {
 }
 
 .link-block-3 {
+  padding-top: 18px;
+  padding-bottom: 18px;
   float: right;
-  background-image: url('../images/message-closed-envelope.svg');
-  background-position: 50% 50%;
-  background-size: 35px;
-  background-repeat: no-repeat;
+  opacity: 0.7;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
 }
 
 .link-block-3:hover {
-  background-image: url('../images/pink-message-closed-envelope.svg');
-  background-position: 50% 50%;
-  background-size: 35px;
-  background-repeat: no-repeat;
+  opacity: 1;
 }
 
 .triangle {
   position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 70px;
   z-index: 2;
   display: block;
   width: 25px;
-  margin-top: -77px;
   margin-right: auto;
   margin-left: auto;
   border-top: 25px solid #ff6382;
   border-right: 15px solid transparent;
   border-left: 15px solid transparent;
+  opacity: 0.8;
 }
 
 .tri {
@@ -4834,6 +4839,85 @@ p {
   border-top: 25px solid #ff6382;
   border-right: 15px solid transparent;
   border-left: 15px solid transparent;
+}
+
+.contactbutton {
+  display: inline-block;
+  width: 10em;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 2px solid #4353ff;
+  border-radius: 20px;
+  background-color: #4353ff;
+  -webkit-transition: background-color 300ms ease, color 300ms ease;
+  transition: background-color 300ms ease, color 300ms ease;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contactbutton:hover {
+  border-style: solid;
+  border-color: #4353ff;
+  background-color: rgba(67, 83, 255, 0);
+  color: #4353ff;
+}
+
+.contactbutton.quote {
+  background-color: transparent;
+  color: #4353ff;
+}
+
+.contactbutton.quote:hover {
+  background-color: #4353ff;
+  color: #fff;
+}
+
+.contactbutton.development:hover {
+  background-color: #fff;
+}
+
+.buttoncentrediv {
+  margin-top: 70px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.founderimage {
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgba(21, 100, 207, .3);
+  border-radius: 100%;
+  opacity: 0.95;
+}
+
+.foundername {
+  padding-bottom: 0px;
+  -webkit-transition: color 300ms ease;
+  transition: color 300ms ease;
+  color: hsla(0, 0%, 100%, .8);
+}
+
+.foundername:hover {
+  color: #fff;
+}
+
+.text-block-4 {
+  text-align: center;
+}
+
+.foundersubtitle {
+  padding-top: 0px;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.row-2 {
+  padding-top: 35px;
 }
 
 html.w-mod-js *[data-ix="fade-up-and-in"] {
@@ -4974,7 +5058,8 @@ html.w-mod-js *[data-ix="triangle-on-load"] {
     padding-left: 30px;
   }
   .keyboard_section {
-    height: 500px;
+    height: 600px;
+    padding-top: 65px;
   }
   .sectionintroparagraph {
     padding-top: 0px;
@@ -5247,7 +5332,7 @@ html.w-mod-js *[data-ix="triangle-on-load"] {
     padding-top: 90px;
   }
   .newsletter-header.bottom {
-    margin-top: -143px;
+    margin-top: -16px;
     padding-bottom: 0px;
     font-size: 30px;
   }
@@ -5344,14 +5429,77 @@ html.w-mod-js *[data-ix="triangle-on-load"] {
     margin-left: 108px;
   }
   .tabs_tablet {
-    height: 90%;
+    height: auto;
+    clear: none;
     background-color: #f5f5f5;
   }
   .keyboard {
+    width: 700px;
     margin-top: 0px;
-    -webkit-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    transform: scale(0.7);
+    margin-bottom: 25px;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  .keybutton {
+    width: 42px;
+    height: 29px;
+  }
+  .keybutton.square {
+    width: 40px;
+    height: 45px;
+  }
+  .keybutton.square.tab {
+    width: 70px;
+    height: 45px;
+  }
+  .keybutton.square.center {
+    height: 45px;
+  }
+  .keybutton.delete {
+    width: 70px;
+    height: 45px;
+  }
+  .keybutton.caps {
+    width: 78px;
+  }
+  .keybutton.caps.return {
+    width: 79px;
+    height: 45px;
+  }
+  .keybutton.shift {
+    width: 104px;
+  }
+  .keybutton.shift.right {
+    width: 100px;
+  }
+  .keybutton.bottom {
+    height: 50px;
+  }
+  .keybutton.bottom.wide {
+    height: 50px;
+  }
+  .keybutton.bottom.command {
+    width: 65px;
+  }
+  .keybutton.bottom.space {
+    width: 190px;
+  }
+  .keybutton.leftrightarrows {
+    width: 35px;
+    height: 26px;
+  }
+  .keybutton.uparrow {
+    width: 35px;
+    height: 26px;
+  }
+  .keybutton.arrowdown {
+    width: 35px;
+    height: 26px;
+  }
+  .arrowwrap {
+    width: 120px;
+    height: 50px;
   }
   .image-8 {
     width: 300px;
@@ -5363,6 +5511,24 @@ html.w-mod-js *[data-ix="triangle-on-load"] {
   }
   .div-block-11 {
     margin-left: 0px;
+  }
+  .founderimage {
+    border: 10px solid #dbe7ec;
+    border-radius: 100%;
+  }
+  .foundername {
+    -webkit-transition: color 300ms ease;
+    transition: color 300ms ease;
+    font-family: Roboto, sans-serif;
+    color: hsla(0, 0%, 100%, .8);
+    text-decoration: none;
+  }
+  .foundername:hover {
+    color: #fff;
+  }
+  .text-block-4 {
+    font-family: Roboto, sans-serif;
+    text-align: center;
   }
 }
 
@@ -5392,6 +5558,9 @@ html.w-mod-js *[data-ix="triangle-on-load"] {
   .container_2.silent-era {
     margin-bottom: -126px;
     padding-bottom: 0px;
+  }
+  .tabssection {
+    height: auto;
   }
   .mockup {
     padding-top: 45px;
@@ -5564,7 +5733,7 @@ html.w-mod-js *[data-ix="triangle-on-load"] {
     line-height: 50px;
   }
   .hugetabheading {
-    font-size: 240px;
+    font-size: 100px;
   }
   .slider-dots {
     margin-bottom: 120px;
@@ -5603,6 +5772,22 @@ html.w-mod-js *[data-ix="triangle-on-load"] {
   .flexfull {
     height: 400px;
   }
+  .keyboard {
+    display: none;
+  }
+  .keyboardimage {
+    margin-bottom: 20px;
+  }
+  .founderimage {
+    width: 60%;
+  }
+  .founderdiv {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .column-4 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 479px) {
@@ -5611,11 +5796,14 @@ html.w-mod-js *[data-ix="triangle-on-load"] {
     line-height: 40px;
   }
   .keyboard_section {
-    height: 600px;
+    height: 500px;
   }
   .sectionintroparagraph {
+    padding-right: 29px;
+    padding-left: 29px;
     font-size: 14px;
     line-height: 22px;
+    text-align: justify;
   }
   .sectionintroparagraph.marketplace {
     margin-bottom: -69px;
@@ -5726,6 +5914,7 @@ html.w-mod-js *[data-ix="triangle-on-load"] {
     background-position: -77px 0px;
   }
   .slide.serve {
+    height: 100px;
     padding-top: 0px;
   }
   .slide.provide {
@@ -5804,7 +5993,7 @@ html.w-mod-js *[data-ix="triangle-on-load"] {
     text-align: left;
   }
   .newsletter-header.bottom {
-    margin-top: 100px;
+    margin-top: 22px;
     font-size: 20px;
     line-height: 25px;
     text-align: center;
@@ -5849,11 +6038,11 @@ html.w-mod-js *[data-ix="triangle-on-load"] {
     font-size: 60px;
   }
   .tabsfull {
-    height: 75%;
+    height: 600px;
   }
   .hugetabheading {
     padding-top: 116px;
-    font-size: 70px;
+    font-size: 68px;
     letter-spacing: 0px;
   }
   .slider-dots {
@@ -5903,6 +6092,9 @@ html.w-mod-js *[data-ix="triangle-on-load"] {
   .flexcontainer_mobile {
     margin-right: 20px;
     margin-left: 20px;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
   }
   .flexchild {
     padding-top: 0px;
@@ -5924,7 +6116,7 @@ html.w-mod-js *[data-ix="triangle-on-load"] {
   .keyboard {
     position: static;
     top: 0px;
-    display: inline-block;
+    display: none;
     float: none;
     clear: none;
     -webkit-transform: scale(0.41);
@@ -5957,6 +6149,13 @@ html.w-mod-js *[data-ix="triangle-on-load"] {
   .navlink {
     padding-right: 10px;
     font-size: 14px;
+  }
+  .buttoncentrediv {
+    margin-bottom: 0px;
+  }
+  .tabsmobile {
+    margin-bottom: 40px;
+    background-color: transparent;
   }
 }
 
