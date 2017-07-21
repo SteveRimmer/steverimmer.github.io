@@ -1750,7 +1750,7 @@ p {
   background-color: #fff;
 }
 
-.gertie_leftside {
+.designleft {
   height: 500px;
   background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/Screen-Shot-2017-07-14-at-4.24.16-PM.png');
   background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/Screen-Shot-2017-07-14-at-4.24.16-PM.png');
@@ -1796,7 +1796,7 @@ p {
   background-repeat: no-repeat;
 }
 
-.felix-the-cat {
+.developright {
   height: 500px;
   background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/code-944499_1280.jpg');
   background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/code-944499_1280.jpg');
@@ -2974,8 +2974,8 @@ p {
 }
 
 .overlay-serif.dwarfs:hover {
-  background-image: url('../images/Dwarfs_light.gif'), -webkit-linear-gradient(270deg, rgba(0, 0, 0, .02), rgba(0, 0, 0, .59));
-  background-image: url('../images/Dwarfs_light.gif'), linear-gradient(180deg, rgba(0, 0, 0, .02), rgba(0, 0, 0, .59));
+  background-image: url('../images/Dwarfs_light_1.gif'), -webkit-linear-gradient(270deg, rgba(0, 0, 0, .02), rgba(0, 0, 0, .59));
+  background-image: url('../images/Dwarfs_light_1.gif'), linear-gradient(180deg, rgba(0, 0, 0, .02), rgba(0, 0, 0, .59));
   background-size: cover, auto;
   background-repeat: repeat, repeat;
 }
@@ -3004,8 +3004,8 @@ p {
 }
 
 .dwarf_overlay:hover {
-  background-image: -webkit-linear-gradient(270deg, transparent, rgba(0, 0, 0, .63)), url('../images/Dwarfs_light_1.gif');
-  background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, .63)), url('../images/Dwarfs_light_1.gif');
+  background-image: -webkit-linear-gradient(270deg, transparent, rgba(0, 0, 0, .63)), url('../images/Dwarfs_light.gif');
+  background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, .63)), url('../images/Dwarfs_light.gif');
   background-position: 0% 0%, 0px 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -3094,8 +3094,8 @@ p {
 }
 
 .test_again:hover {
-  background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, .64), transparent 67%), url('../images/Dwarfs_light_1.gif');
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, .64), transparent 67%), url('../images/Dwarfs_light_1.gif');
+  background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, .64), transparent 67%), url('../images/Dwarfs_light.gif');
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .64), transparent 67%), url('../images/Dwarfs_light.gif');
   background-position: left top, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -4849,8 +4849,9 @@ p {
   border: 2px solid #4353ff;
   border-radius: 20px;
   background-color: #4353ff;
-  -webkit-transition: background-color 300ms ease, color 300ms ease;
-  transition: background-color 300ms ease, color 300ms ease;
+  opacity: 0.85;
+  -webkit-transition: background-color 300ms ease, color 300ms ease, opacity 300ms ease;
+  transition: background-color 300ms ease, color 300ms ease, opacity 300ms ease;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   text-align: center;
@@ -4859,12 +4860,14 @@ p {
 .contactbutton:hover {
   border-style: solid;
   border-color: #4353ff;
-  background-color: rgba(67, 83, 255, 0);
-  color: #4353ff;
+  background-color: #4353ff;
+  opacity: 1;
+  color: #fff;
 }
 
 .contactbutton.quote {
   background-color: transparent;
+  opacity: 1;
   color: #4353ff;
 }
 
@@ -4873,8 +4876,13 @@ p {
   color: #fff;
 }
 
+.contactbutton.development {
+  opacity: 1;
+}
+
 .contactbutton.development:hover {
   background-color: #fff;
+  color: #4353ff;
 }
 
 .buttoncentrediv {
@@ -4888,7 +4896,13 @@ p {
   border-width: 10px;
   border-color: rgba(21, 100, 207, .3);
   border-radius: 100%;
-  opacity: 0.95;
+  opacity: 0.9;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.founderimage:hover {
+  opacity: 1;
 }
 
 .foundername {
